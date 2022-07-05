@@ -1,0 +1,46 @@
+{
+  "Dashboard": [
+    {
+      "Roll_no": 3,
+      "Name": "Abhishek Yadav",
+      "DOB": "2022-03-23",
+      "Score": 22,
+      "id": 4
+    },
+    {
+      "Roll_no": 22,
+      "Name": "aman",
+      "DOB": "2022-03-24",
+      "Score": 44,
+      "id": 5
+    },
+    {
+      "Roll_no": 7,
+      "Name": "Abhishek Yadav",
+      "DOB": "2022-03-25",
+      "Score": 99,
+      "id": 6
+    },
+    {
+      "Roll_no": 1,
+      "Name": "Abhishek Yadav",
+      "DOB": "2022-03-17",
+      "Score": 22,
+      "id": 7
+    }
+  ],
+  "stud": [],
+  "loggedin": [],
+  "signupUser": [
+    {
+      "Email": "Abhishek.yadav03@nagarro.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "Email": "aakashbst1998@gmail.com",
+      "password": "123456",
+      "id": 2
+    }
+  ]
+}

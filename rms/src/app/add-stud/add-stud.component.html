@@ -1,0 +1,29 @@
+
+<div *ngIf=alert class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> You Data is successfully entered.
+    <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+<div style="border: 2px; width: 50%; padding-left: 30%;">
+<form [formGroup]="addstud" (ngSubmit)="collectStud()" style="width: 60;">
+    <div class="form-group">
+        <label for="InputRoll_no1">Roll no</label>
+        <input type="number" class="form-control" formControlName="Roll_no" placeholder="Enter Roll_no">
+      </div>
+    <div class="form-group" >
+        <label for="InputName1">Name</label>
+        <input type="text" class="form-control" formControlName="Name" placeholder="Enter Name">
+      </div>
+    <div class="form-group">
+        <label for="InputDOB1">DOB</label>
+        <input type="date" class="form-control" formControlName="DOB" placeholder="Enter DOB">
+      </div>
+      <div class="form-group">
+        <label for="InputScore1">Score</label>
+        <input type="Number" class="form-control" formControlName="Score" placeholder="Enter Score" min="0" max='100'>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button> <button routerLink="/list" type="submit" class="btn btn-primary">Back</button>
+  </form>
+</div>

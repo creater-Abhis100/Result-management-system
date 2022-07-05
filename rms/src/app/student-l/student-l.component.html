@@ -1,0 +1,26 @@
+<!-- <div *ngIf=alert class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> You Data is successfully entered.
+    <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+  <div>
+    <a routerLink="/login"><button  type="button" class="btn btn-primary btn-lg btn-block" style="margin-left: 10%;">Login As Teacher</button></a>
+    <a routerLink="/newtech"><button  type="button" class="btn btn-primary btn-lg btn-block" style="margin-left: 10%;">Register As new Teacher</button></a>
+    <a routerLink="/Slogin"><button type="button" class="btn btn-primary btn-lg btn-block" style="margin-left: 10%;">Login As Student</button></a>
+    </div>
+
+  <div style="border: 2px; width: 50%; padding-left: 30%;">
+    <form [formGroup]="Slogindata" (ngSubmit)="login_s()" style="width: 60;">
+        <div class="form-group">
+            <h4>Check Result</h4>
+            <label for="InputRoll_no1">Roll No. </label>
+            <input type="txt" class="form-control" formControlName="Roll_no" placeholder="Enter Roll No.">
+          </div>
+        <div class="form-group">
+            <label for="InputDOB1">DOB</label>
+            <input type="Date" class="form-control" formControlName="DOB" placeholder="Select DOB">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
